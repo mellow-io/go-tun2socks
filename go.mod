@@ -14,8 +14,8 @@ require (
 	v2ray.com/core v4.19.1+incompatible
 )
 
-replace github.com/eycorsican/go-tun2socks => /opt/go/src/github.com/mellow-io/go-tun2socks
+replace github.com/eycorsican/go-tun2socks => github.com/mellow-io/go-tun2socks
 
-replace v2ray.com/core => /opt/go/src/github.com/mellow-io/v2ray-core
+replace v2ray.com/core => github.com/mellow-io/v2ray-core
 
-replace github.com/songgao/water => /opt/go/src/github.com/mellow-io/water
+replace github.com/songgao/water => github.com/mellow-io/water
