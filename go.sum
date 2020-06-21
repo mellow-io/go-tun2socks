@@ -17,6 +17,12 @@ github.com/google/go-cmp v0.2.0/go.mod h1:oXzfMopK8JAjlY9xF4vHSVASa0yLyX7SntLO5a
 github.com/google/gopacket v1.1.17 h1:rMrlX2ZY2UbvT+sdz3+6J+pp2z+msCq9MxTU6ymxbBY=
 github.com/google/gopacket v1.1.17/go.mod h1:UdDNZ1OO62aGYVnPhxT1U6aI7ukYtA/kB8vaU0diBUM=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
+github.com/mellow-io/go-tun2socks v0.0.0-20200621073437-d54caa79d7d4 h1:i2HkgaJ0mAQev3oV0AzHQv6VPnLOftEuV7MNdI332C0=
+github.com/mellow-io/go-tun2socks v0.0.0-20200621073437-d54caa79d7d4/go.mod h1:Mcc+z5ZBkaqGxl1ZRz3XyZaGUQX513pkpb7Uwm9+M/s=
+github.com/mellow-io/v2ray-core v0.0.0-20200621073531-898a5935c60d h1:BIPNUYxBwyNolaJn5pVglt2bFtYTvo/pPaunRNLySKE=
+github.com/mellow-io/v2ray-core v0.0.0-20200621073531-898a5935c60d/go.mod h1:/1kjLJXL9swoAbjOfQ1W54yJ5mMNuPVxpwOugFIEBQI=
+github.com/mellow-io/water v0.0.0-20200621073504-499fe8e42129 h1:WMoi5gfvZyUGlxxzX7Avp2LkDlNyzeRFEowSy+XbOGo=
+github.com/mellow-io/water v0.0.0-20200621073504-499fe8e42129/go.mod h1:ftFR+6+S5wsd50RVVBQnggAWk9vmrUGZlSanJIWeiBA=
 github.com/miekg/dns v1.1.22 h1:Jm64b3bO9kP43ddLjL2EY3Io6bmy1qGb9Xxz6TqS6rc=
 github.com/miekg/dns v1.1.22/go.mod h1:bPDLeHnStXmXAq1m/Ch/hvfNHr14JKNPMBo3VZKjuso=
 github.com/oschwald/maxminddb-golang v1.5.0 h1:rmyoIV6z2/s9TCJedUuDiKht2RN12LWJ1L7iRGtWY64=
