@@ -4,12 +4,23 @@ services:
   - docker
 
 language: go
+
 go:
-  - "1.14.4"
+  - 1.14.4
 
 before_install:
   - go get github.com/karalabe/xgo
 
-install: go get -d ./...
+script: make mellow
 
-script: make
+deploy:
+  provider: releases
+  api_key:
+    secure: oOy8TAuvFfnZj9E77fr5uejmD/9Qp37uRkfQE1Unv67TwHwizt3NVxU2So5fXj62ZcOraeL+vDi/xFE433hlieZTPt5TO1MQkecIMFpo74bOw8RYRHNQk+FUQQix/thHTvAoF4sRmQSmJL26/EAu59MXpp065AvgZmvwzi2JtBxiGiSFLQMOHn3yBONgZbbGxDa1bAQKk6jicLpVR8qv4wSFiOwyj/yC+NbaVpTzAHhJNTJriJ3EE6ZWDFLRXTl8vK87vKYA4fBtkyATmlOvCX0+Qki6bjiFAx0FGOOizVF1j3wW/RHu4mnDfxQlQ1mQGdpTP1+EmKk9jE2r27ndLoZvNXMi6Jm8L5EXFJWScwYMkBxM07d6L82Z+A1jFbT1KpMAWFOvXPDPCeyIKcOfWhYAhTvfbek+N0xHxi8+rjEtnejLqIECsbETSq8pA+YIZobFffXWoSLkE6gTI56bi/Jw1nCIFiKXBHJReBV/ZeQM/pgjXMBi8ySpKmuXwcH5fA6zDYxx2u+xcn2vZX01sJ/sVoWd/oT73dnbmUZtcL+Hmu7QppP5s1F4LmlkMo8QjUqj25V0QNkttqtipmHHIJFKkmpG/hVeyS3cmgb0U86jJ/HxRO61rBYuPapjJul05+9atRR0ZTFJCmY2pj/FWNcv0riB59W5CZ5pZtLMQsM=
+  file_glob: true
+  file:
+    - "build/core*"
+  overwrite: true
+  skip_cleanup: true
+  on:
+    tags: true
