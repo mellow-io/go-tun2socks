@@ -177,10 +177,9 @@ func getNameByPid(pid uint32) (string, error) {
 	me.Size = uint32(unsafe.Sizeof(me))
 	err = win.Module32First(win.Handle(handle), &me)
 	if err != nil {
-		return win.UTF16PtrToString(&me.Module[0]), nil
-	} else {
 		return "", fmt.Errorf("failed to get process entry: %v", err)
 	}
+	return win.UTF16PtrToString(&me.Module[0]), nil
 }
 
 func getTcp4Table() (*win.MIB_TCPTABLE_OWNER_PID, error) {
