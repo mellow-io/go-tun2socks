@@ -9,7 +9,7 @@ go:
   - 1.15
 
 before_install:
-  - go get github.com/mellow-io/xgo
+  - go get src.techknowlogick.com/xgo
 
 script: make mellow
 
