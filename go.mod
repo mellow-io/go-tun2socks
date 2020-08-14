@@ -3,7 +3,6 @@ module github.com/mellow-io/go-tun2socks
 go 1.13
 
 require (
-	github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da // indirect
 	github.com/eycorsican/go-tun2socks v1.16.9
 	github.com/google/gopacket v1.1.17
 	github.com/miekg/dns v1.1.22
@@ -15,7 +14,7 @@ require (
 	v2ray.com/core v4.19.1+incompatible
 )
 
-replace github.com/eycorsican/go-tun2socks => github.com/mellow-io/go-tun2socks v0.0.0-20200621073437-d54caa79d7d4
+replace github.com/eycorsican/go-tun2socks => github.com/mellow-io/go-tun2socks v1.0.9-0.20200814044818-ee3275c43e54
 
 replace v2ray.com/core => github.com/mellow-io/v2ray-core v0.0.0-20200621073531-898a5935c60d
 
