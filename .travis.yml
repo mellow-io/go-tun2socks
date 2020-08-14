@@ -6,10 +6,10 @@ services:
 language: go
 
 go:
-  - 1.14.4
+  - 1.15
 
 before_install:
-  - go get github.com/karalabe/xgo
+  - go get github.com/mellow-io/xgo
 
 script: make mellow
 
